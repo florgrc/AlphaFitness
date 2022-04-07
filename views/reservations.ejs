@@ -1,0 +1,69 @@
+<%- include('partials/head')  %>
+
+<body>
+
+  <%- include('partials/header')  %>
+  <div class="second-body">
+    <p class="title">Hacé tu reserva</p>
+    <div class="reservation-form">
+      <form action="/reservations" method="POST" class="form-style" enctype="multipart/form-data">
+          <div class="label-form">
+            <label for="user" class="label">Nombre</label>
+            <input id="firstname" type="text" name="firstname" class="input">
+            <small class="text-danger" id="firstNameError"></small>
+          </div>
+          <div class="label-form">
+            <label for="user" class="label">Clase</label>
+            <select name="OS" class="select">
+              <option class="select" value="0">Selecciona una clase</option> 
+              <option class="select" value="1">Crossfit</option> 
+              <option class="select" value="2">Functional</option>
+              <option class="select" value="3">Yoga</option> 
+              <option class="select" value="4">Zumba</option> 
+              <option class="select" value="5">Boxeo</option> 
+           </select>
+          </div>
+          <div class="label-form">
+            <label for="user" class="label">Dia</label>
+            <select name="OS" class="select">
+              <option class="select" value="0">Selecciona un dia</option> 
+              <option class="select" value="1">Lunes</option> 
+              <option class="select" value="2">Martes</option>
+              <option class="select" value="3">Miécoles</option> 
+              <option class="select" value="4">Jueves</option> 
+              <option class="select" value="5">Viernes</option>
+              <option class="select" value="5">Sábado</option> 
+           </select>
+          </div>
+          <div class="label-form">
+            <label for="user" class="label">Horario</label>
+            <select name="OS" class="select">
+              <option class="select" value="0">Selecciona un horario</option> 
+              <option class="select" value="1">9:00</option> 
+              <option class="select" value="2">10:00</option>
+              <option class="select" value="3">11:00</option> 
+              <option class="select" value="4">12:00</option> 
+              <option class="select" value="5">14:00</option>
+              <option class="select" value="5">15:00</option> 
+              <option class="select" value="5">16:00</option> 
+              <option class="select" value="5">17:00</option> 
+              <option class="select" value="5">18:00</option>  
+           </select>
+          </div>
+        </form>
+          <div class="button-group">
+            <a href="#miModal"><button type="submit" id="buttonRegister" class="button"
+              value="Registrarse">Confirmar</button></a>
+                  <div id="miModal" class="modal">
+                    <div class="modal-contenido">
+                      <a href="#" class="x">X</a>
+                      <p>Felicitaciones! Tu clase se ha reservado con éxito</p>
+                      <i class="fa-solid fa-face-laugh-wink"></i>
+                    </div>  
+                  </div>
+         </div>
+        
+        </div>
+      </div>
+  </body>
+</html>
